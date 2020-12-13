@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-13T21:52:59.246Z" agent="5.0 (Windows)" etag="JckVPYdeZdlkBaMqCjw8" version="14.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-13T22:13:44.171Z" agent="5.0 (Windows)" etag="b264ukEkAme7tUXDiiOV" version="14.0.1" type="github">
   <diagram id="KVTfTJttFA7VIv5j3BBG" name="Page-1">
     <mxGraphModel dx="2393" dy="1975" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -192,6 +192,9 @@
         </mxCell>
         <mxCell id="mD4xw7xEoLmeudiaQU-A-159" value="Permite con los datos " style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="-140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8XSxcHlYXkKotnHdqUFp-1" value="&lt;div&gt;Nombre:Alexis Ricardo López Mero&lt;/div&gt;&lt;div&gt;Curso/Nivel: 5to &quot;A&quot;&lt;/div&gt;&lt;div&gt;Docente: Ingeniero Roberth Moreira &lt;br&gt;&lt;/div&gt;&lt;div&gt;Asignatura: Gestión de base de datos&lt;/div&gt;&lt;div&gt;Colaborador: roberthmoreiracenteno@gmail.com&lt;br&gt;&lt;/div&gt;Fuente: Propia" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="690" width="350" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
