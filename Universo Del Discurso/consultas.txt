@@ -1,0 +1,53 @@
+
+//Primer consulta
+select count(tutoria.idestudiante) as Cantidad_Tutorias,
+ estudiante.nombre_estudiante as Nombre_Estudiante
+ from tutoria
+ inner join estudiante on tutoria.idestudiante = estudiante.idestudiante
+  where tutoria.idestudiante = estudiante.idestudiante
+group by tutoria.idestudiante, estudiante.nombre_estudiante
+having tutoria.idestudiante=1
+
+
+
+
+
+// segunda consulta
+
+  select count (tutoria.iddocente) as Cantidad_Tutorias,
+ docente.nombre_docente,
+ impartirasignatura.idasignatura,
+ asignatura.descripcion_asignatura
+ from tutoria 
+ inner join docente on tutoria.iddocente = docente.iddocente
+ inner join impartirasignatura on docente.iddocente = impartirasignatura.iddocente
+ inner join asignatura on impartirasignatura.idasignatura = asignatura.idasignatura
+ where docente.iddocente = tutoria.iddocente
+ 
+ group by tutoria.iddocente, docente.nombre_docente,  impartirasignatura.idasignatura, asignatura.descripcion_asignatura
+ having tutoria.iddocente= 2
+// tercer consulta
+
+SELECT  
+  detalle_tutoria.horario_fin - tutoria.horario_tutoria as Duracion, 
+  tutoria.idtutoria
+FROM 
+  public.tutoria, 
+  public.detalle_tutoria
+WHERE 
+  tutoria.idtutoria = detalle_tutoria.idtutoria;
+
+
+
+//cuarta consulta
+select 
+  asignatura.descripcion_asignatura as Asignatura_Mayores_Tutorias
+from
+tutoria 
+ inner join docente on tutoria.iddocente = docente.iddocente
+ inner join impartirasignatura on docente.iddocente = impartirasignatura.iddocente
+ inner join asignatura on impartirasignatura.idasignatura = asignatura.idasignatura
+where  docente.iddocente = tutoria.iddocente
+group by  
+  asignatura.descripcion_asignatura, asignatura.idasignatura
+having  asignatura.idasignatura =3
